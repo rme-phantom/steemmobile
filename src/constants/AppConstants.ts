@@ -12,7 +12,8 @@ export const AppConstants = {
   SNIPPETS_LIMIT: 25,
   APP_LINK: 'https://play.google.com/store/apps/details?id=com.steempro.mobile',
   STEEMIT_SIGNUP: 'https://signup.steemit.com/',
-  DISCORD_LINK: 'https://discord.gg/Bsf98vMg6U',
+  DISCORD_LINK: 'https://discord.gg/amarbanglablog',
+  GITHUB_LINK: 'https://github.com/faisalamin9696/steemmobile',
   MAX_PIN_ATTEMPS: 3,
   STEEMMOBILE_TEAM: [
     {

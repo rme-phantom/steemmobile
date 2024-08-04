@@ -82,8 +82,8 @@ android {
         applicationId "com.steempro.mobile"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 23
-        versionName "1.0.66"
+        versionCode 24
+        versionName "1.0.67"
         multiDexEnabled true
     }
     signingConfigs {

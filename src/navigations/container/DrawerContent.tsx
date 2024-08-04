@@ -16,7 +16,6 @@ import {getCredentials} from '../../utils/realm';
 import auth from '@react-native-firebase/auth';
 import {ScrollView} from 'react-native';
 import messaging from '@react-native-firebase/messaging';
-import {AppStrings} from '../../constants/AppStrings';
 
 const DrawerContent = ({navigation}): JSX.Element => {
   const dispatch = useDispatch();
@@ -133,9 +132,7 @@ const DrawerContent = ({navigation}): JSX.Element => {
               <DrawerItem
                 icon={'logout'}
                 label={'Logout'}
-                // active={active === 'first'}
                 onPress={() => {
-                  // setActive('first');
                   setLogoutDialog(true);
                 }}
               />
@@ -146,7 +143,6 @@ const DrawerContent = ({navigation}): JSX.Element => {
             <DrawerItem
               label="Communities"
               icon={'home-group-plus'}
-              // active={active === 'second'}
               onPress={() => {
                 navigation.navigate(AppRoutes.PAGES.ExploreCommunitiesPage);
               }}
@@ -155,7 +151,6 @@ const DrawerContent = ({navigation}): JSX.Element => {
             <DrawerItem
               label="Witness"
               icon={'vote'}
-              // active={active === 'second'}
               onPress={() => {
                 navigation.navigate(AppRoutes.PAGES.ExploreWitnessPage);
               }}
@@ -166,9 +161,16 @@ const DrawerContent = ({navigation}): JSX.Element => {
             <DrawerItem
               label="Discord"
               icon={'discord'}
-              // active={active === 'second'}
               onPress={() => {
                 Linking.openURL(AppConstants.DISCORD_LINK);
+              }}
+            />
+
+            <DrawerItem
+              label="Github"
+              icon={'github'}
+              onPress={() => {
+                Linking.openURL(AppConstants.GITHUB_LINK);
               }}
             />
 
