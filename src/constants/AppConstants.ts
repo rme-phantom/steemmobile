@@ -13,7 +13,7 @@ export const AppConstants = {
   APP_LINK: 'https://play.google.com/store/apps/details?id=com.steempro.mobile',
   STEEMIT_SIGNUP: 'https://signup.steemit.com/',
   DISCORD_LINK: 'https://discord.gg/amarbanglablog',
-  GITHUB_LINK: 'https://github.com/faisalamin9696/steemmobile',
+  GITHUB_LINK: 'https://github.com/rme-phantom/steemmobile',
   MAX_PIN_ATTEMPS: 3,
   STEEMMOBILE_TEAM: [
     {

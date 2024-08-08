@@ -136,10 +136,6 @@ const FeedTabNavigator = ({navigation, route}): JSX.Element => {
                   label={'Create Post'}
                   extended={isExtended}
                   onPress={() => {
-                    queryClient.invalidateQueries({
-                      queryKey: ['getActivePostsByTrending-feed-faisalamin'],
-                    });
-
                     navigation.navigate(AppRoutes.PAGES.PostingStack);
                   }}
                   visible={true}
