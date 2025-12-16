@@ -1,6 +1,6 @@
 {
   "name": "SteemMobile",
-  "version": "1.0.67",
+  "version": "1.0.68",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@bugsnag/react-native": "^7.25.0",
-    "@hiveio/dhive": "https://github.com/faisalamin9696/dhive",
     "@native-html/iframe-plugin": "^2.6.1",
     "@react-native-async-storage/async-storage": "^1.23.1",
     "@react-native-camera-roll/camera-roll": "^7.8.1",
@@ -31,6 +30,7 @@
     "@react-navigation/native-stack": "^6.10.0",
     "@reduxjs/toolkit": "^2.2.6",
     "@shopify/flash-list": "^1.7.0",
+    "@steempro/dsteem": "^1.0.5",
     "@tanstack/query-sync-storage-persister": "^5.50.1",
     "@tanstack/react-query": "^5.50.1",
     "@tanstack/react-query-persist-client": "^5.50.1",
@@ -50,6 +50,7 @@
     "md5": "^2.3.0",
     "moment": "^2.30.1",
     "multihashes": "^4.0.3",
+    "nativewind": "^2.0.11",
     "path": "^0.12.7",
     "paths-js": "^0.4.10",
     "querystring": "^0.2.1",
@@ -98,8 +99,7 @@
     "speakingurl": "^14.0.1",
     "text-encoding": "^0.7.0",
     "xmldom": "^0.6.0",
-    "xss": "^1.0.15",
-    "nativewind": "^2.0.11"
+    "xss": "^1.0.15"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -120,8 +120,8 @@
     "jest": "^29.6.3",
     "prettier": "2.8.8",
     "react-test-renderer": "18.2.0",
-    "typescript": "5.0.4",
-    "tailwindcss": "3.3.2"
+    "tailwindcss": "3.3.2",
+    "typescript": "5.0.4"
   },
   "engines": {
     "node": ">=18"

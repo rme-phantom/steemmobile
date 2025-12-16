@@ -76,6 +76,7 @@ const StackNavigator = ({initRoute}): JSX.Element => {
     return (
       <Drawer.Navigator
         drawerContent={props => <DrawerContent {...props} />}
+        
         screenOptions={{
           headerShown: true,
           drawerStyle: {

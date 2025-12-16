@@ -36,7 +36,7 @@ import {AppStrings} from '../../../constants/AppStrings';
 import {AppConstants} from '../../../constants/AppConstants';
 import MainWrapper from '../../../components/wrappers/MainWrapper';
 import {HStack, VStack} from '@react-native-material/core';
-import {PrivateKey} from '@hiveio/dhive';
+import {PrivateKey} from '@steempro/dsteem';
 import {KeyTypes} from '../../../constants/AppTypes';
 import {saveLoginHandler} from '../../../redux/reducers/LoginReducer';
 import {useDispatch} from 'react-redux';

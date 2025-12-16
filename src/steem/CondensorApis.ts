@@ -3,7 +3,7 @@ import {ImageOrVideo} from 'react-native-image-crop-picker';
 import {Platform} from 'react-native';
 import {AppConstants} from '../constants/AppConstants';
 import {AppStrings} from '../constants/AppStrings';
-import {Client, cryptoUtils, Operation, PrivateKey} from '@hiveio/dhive';
+import {Client, cryptoUtils, Operation, PrivateKey} from '@steempro/dsteem';
 import {getServer} from '../utils/realm';
 import {PrivKey} from '../utils/privKey';
 import RNHeicConverter from 'react-native-heic-converter';

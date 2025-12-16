@@ -1,4 +1,4 @@
-import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import Toast from 'react-native-toast-message';
 import {client} from './src/steem/CondensorApis';
 import {Provider} from 'react-redux';
@@ -51,7 +51,8 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <GestureHandlerRootView style={{flex: 1}}>
-        <SafeAreaProvider style={{flex: 1}}>
+        <SafeAreaView edges={['top','bottom']} style={{flex: 1}}>
+          {/* <SafeAreaProvider style={{flex: 1}} > */}
           <Provider store={store}>
             <ErrorBoundary
               onError={errorHandler}
@@ -60,7 +61,8 @@ const App = () => {
             </ErrorBoundary>
           </Provider>
           <Toast position="top" topOffset={80} config={toastConfig} />
-        </SafeAreaProvider>
+        </SafeAreaView>
+        {/* </SafeAreaProvider> */}
       </GestureHandlerRootView>
     </QueryClientProvider>
   );
